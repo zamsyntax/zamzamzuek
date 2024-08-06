@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Zamzam Trizuama Aricsma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.8)), url('telkomsekolah.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .school-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+            color: #ffd700;
+        }
+
+        .value {
+            color: #fff;
+        }
+
+        .social-media {
+            margin-top: 30px;
+        }
+
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-media li {
+            margin-bottom: 10px;
+        }
+
+        .social-media a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #fff;
+        }
+
+        .music-controls {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .music-controls button {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .music-controls button:hover {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-section">
+                <img src="zamzamprofil.png" alt="Foto Profil Zamzam" class="profile-pic">
+                <h1>Biodata</h1>
+            </div>
+            <img src="telkomlogo.jpg" alt="Logo Telkom" class="school-logo">
+        </div>
+        <div class="info">
+            <span class="label">Nama:</span>
+            <span class="value">Zamzam Trizuama Aricsma</span>
+        </div>
+        <div class="info">
+            <span class="label">Kelas:</span>
+            <span class="value">11 RPL1</span>
+        </div>
+        <div class="info">
+            <span class="label">Sekolah:</span>
+            <span class="value">SMK Telkom Lampung</span>
+        </div>
+        <div class="info">
+            <span class="label">Hobi Saya:</span>
+            <span class="value">Berkegiatan di luar ruangan outdoor</span>
+        </div>
+        <div class="info">
+            <span class="label">Alamat:</span>
+            <span class="value">Negerikaton kabupaten pesawaran lampung</span>
+        </div>
+        <div class="info">
+            <span class="label">Umur:</span>
+            <span class="value">17 Tahun</span>
+        </div>
+
+        <div class="social-media">
+            <h2>Sosial Media</h2>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="openLink('https://www.instagram.com/zmtza')">Instagram</a>
+                </li>
+                <li><a href="javascript:void(0);" onclick="openLink('https://www.facebook.com/username')">Facebook</a>
+                </li>
+                <li><a href="javascript:void(0);" onclick="openLink('https://github.com/zamsyntax')">GitHub</a></li>
+            </ul>
+        </div>
+
+        <!-- Tambahkan kontrol musik -->
+        <div class="music-controls">
+            <button onclick="toggleMusic()">Play/Pause Musik</button>
+        </div>
+    </div>
+
+    <!-- Audio untuk musik latar belakang -->
+    <audio id="background-music" src="lagu1.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
